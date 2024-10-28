@@ -78,7 +78,7 @@ def update_journal_entry():
                 print("3. Activity")
                 print("4. Notes")
                 choice = input("Choose an option: ")
-
+4
                 if choice == '1':
                     new_date = input("Enter new date (YYYY-MM-DD): ")
                     row[0] = new_date
