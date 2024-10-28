@@ -47,7 +47,7 @@ def delete_journal_entry():
     
     if entry_found:
         # Overwrite the file with updated entries
-        with open(Journal_file, 'w', newline='') as file: #'w' Wite Mode
+        with open(Journal_file, 'w', newline='') as file: #'w' Write Mode
             writer = csv.writer(file)
             writer.writerows(updated_entries)
         print(f"Entry for {client_name} on {date} deleted.")
@@ -78,7 +78,6 @@ def update_journal_entry():
                 print("3. Activity")
                 print("4. Notes")
                 choice = input("Choose an option: ")
-4
                 if choice == '1':
                     new_date = input("Enter new date (YYYY-MM-DD): ")
                     row[0] = new_date
